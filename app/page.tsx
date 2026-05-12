@@ -26,7 +26,7 @@ export default function PortfolioWebsite() {
               </a>
 
               <a
-                href="mailto:your@email.com"
+                href="mailto:sainn.deu@gmail.com"
                 className="border border-gray-300 px-6 py-3 rounded-2xl hover:bg-gray-100 transition"
               >
                 Contact Me
@@ -133,6 +133,14 @@ export default function PortfolioWebsite() {
           className="inline-block bg-black text-white px-8 py-4 rounded-2xl hover:opacity-90 transition"
         >
           Get In Touch
+        </a>
+
+        <a
+          href="https://linkedin.com/in/sai-naik-nimbalkar"
+          target="_blank"
+          className="border border-gray-300 px-6 py-3 rounded-2xl hover:bg-gray-100 transition"
+        >
+          LinkedIn
         </a>
       </section>
     </div>
