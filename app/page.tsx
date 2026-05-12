@@ -130,7 +130,7 @@ export default function PortfolioWebsite() {
 
         <a
           href="mailto:sainn.deu@gmail.com"
-          className="inline-block bg-black text-white px-8 py-4 rounded-2xl hover:opacity-90 transition"
+          className="inline-block bg-black text-white px-8 py-4 rounded-2xl hover:opacity-90 transition mr-4"
         >
           Get In Touch
         </a>
