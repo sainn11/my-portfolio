@@ -4,45 +4,55 @@ export default function PortfolioWebsite() {
       <section className="px-6 py-20 max-w-6xl mx-auto">
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <div>
-            <p className="text-sm uppercase tracking-[0.2em] text-gray-500 mb-4">
-              Marketing • Content • Digital Strategy
-            </p>
-
-            <h1 className="text-5xl md:text-6xl font-bold leading-tight mb-6">
-              Hi, I'm Sai.
+            <h1 className="text-5xl md:text-7xl font-bold leading-tight mb-6">
+               Sai Naik Nimbalkar
             </h1>
 
+            <p className="text-2xl md:text-3xl text-gray-700 mb-6 font-light">
+            Digital Marketing • Content • Digital Strategy
+            </p>
+
             <p className="text-lg text-gray-600 mb-8 leading-relaxed">
-              I create marketing content, social campaigns, and digital
-              experiences that help brands connect with people.
+              I help create engaging website content, performance marketing campaigns,
+              and marketing experiences that connect with audiences and drive growth.
             </p>
 
             <div className="flex flex-wrap gap-4">
               <a
                 href="#projects"
-                className="bg-black text-white px-6 py-3 rounded-2xl hover:opacity-90 transition"
+               className="bg-black text-white px-6 py-3 rounded-2xl hover:opacity-90 transition"
               >
                 View Projects
               </a>
 
               <a
-                href="mailto:sainn.deu@gmail.com"
+                href="https://linkedin.com/in/sai-naik-nimbalkar"
+                target="_blank"
                 className="border border-gray-300 px-6 py-3 rounded-2xl hover:bg-gray-100 transition"
               >
-                Contact Me
+                LinkedIn
+              </a>
+
+              <a
+              href="/CV/Lebenslauf_DE.pdf"
+              target="_blank"
+              className="border border-gray-300 px-6 py-3 rounded-2xl hover:bg-gray-100 transition"
+              >
+                Download CV
               </a>
             </div>
           </div>
-
           <div className="flex justify-center">
-            <div className="w-72 h-72 rounded-3xl bg-gray-200 flex items-center justify-center text-gray-500 text-lg shadow-xl">
-              Your Photo
-            </div>
+            <img
+              src="/Photo/My Photo.jpg"
+              alt="Sai Naik Nimbalkar"
+              className="w-72 h-72 rounded-3xl object-cover shadow-xl"
+            />
           </div>
         </div>
       </section>
 
-      <section className="px-6 py-16 bg-gray-50">
+      <section className="px-6 py-24 bg-gray-50">
         <div className="max-w-4xl mx-auto">
           <h2 className="text-3xl font-bold mb-6">About Me</h2>
 
@@ -53,7 +63,7 @@ export default function PortfolioWebsite() {
         </div>
       </section>
 
-      <section className="px-6 py-16 max-w-6xl mx-auto">
+      <section className="px-6 py-24 max-w-6xl mx-auto">
         <h2 className="text-3xl font-bold mb-10">Skills</h2>
 
         <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
@@ -129,7 +139,7 @@ export default function PortfolioWebsite() {
         </p>
 
         <a
-          href="mailto:sainn.deu@gmail.com"
+          href="mailto: sainn.deu@gmail.com"
           className="inline-block bg-black text-white px-8 py-4 rounded-2xl hover:opacity-90 transition mr-4"
         >
           Get In Touch
