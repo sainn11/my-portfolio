@@ -4,7 +4,7 @@ export default function PortfolioWebsite() {
       <section className="px-6 py-20 max-w-6xl mx-auto">
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <div>
-            <h1 className="text-5xl md:text-7xl font-bold leading-tight mb-6">
+            <h1 className="text-6xl md:text-8xl font-bold leading-tight mb-6">
                Sai Naik Nimbalkar
             </h1>
 
@@ -12,7 +12,7 @@ export default function PortfolioWebsite() {
             Digital Marketing • Content • Digital Strategy
             </p>
 
-            <p className="text-lg text-gray-600 mb-8 leading-relaxed">
+            <p className="text-xl text-gray-600 mb-8 leading-relaxed max-w-xl">
               I help create engaging website content, performance marketing campaigns,
               and marketing experiences that connect with audiences and drive growth.
             </p>
@@ -87,34 +87,35 @@ export default function PortfolioWebsite() {
         </div>
       </section>
 
-      <section id="projects" className="px-6 py-16 bg-gray-50">
+      <section id="projects" className="px-6 py-24 bg-gray-50">
         <div className="max-w-6xl mx-auto">
           <h2 className="text-3xl font-bold mb-10">Projects</h2>
 
           <div className="grid md:grid-cols-3 gap-6">
             {[
               {
+                title: "SEO Blog Strategy",
+                desc: "Created SEO-focused blog content and optimized website copy to improve visibility and engagement.",
+              },
+              {
                 title: "Social Media Campaign",
-                desc: "Created a multi-platform campaign that increased engagement and reach.",
+                desc: "Developed social media creatives and campaign content for audience engagement and brand awareness.",
               },
               {
-                title: "Brand Content Strategy",
-                desc: "Developed content plans and messaging for a growing startup.",
-              },
-              {
-                title: "Marketing Portfolio Project",
-                desc: "Built creative visuals and promotional assets for digital marketing.",
+                title: "Performance Marketing",
+                desc: "Worked on digital campaigns, ad creatives, and marketing strategies focused on growth and conversions.",
               },
             ].map((project) => (
               <div
                 key={project.title}
-                className="bg-white p-6 rounded-3xl shadow-sm border border-gray-200"
+                className="bg-white p-8 rounded-3xl shadow-md border border-gray-100 hover:-translate-y-2 hover:shadow-xl transition duration-300"
+
               >
                 <div className="h-40 rounded-2xl bg-gray-200 mb-5 flex items-center justify-center text-gray-500">
                   Project Image
                 </div>
 
-                <h3 className="text-xl font-semibold mb-3">
+                <h3 className="text-2xl font-semibold mb-4">
                   {project.title}
                 </h3>
 
