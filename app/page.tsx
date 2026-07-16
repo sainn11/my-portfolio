@@ -1,44 +1,41 @@
 export default function PortfolioWebsite() {
   return (
-    <div className="min-h-screen bg-white text-gray-900 font-sans">
+    <div className="min-h-screen bg-white text-blue-800 font-sans">
       <section className="px-6 py-20 max-w-6xl mx-auto">
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <div>
-            <h1 className="text-6xl md:text-8xl font-bold leading-tight mb-6">
-               Sai Naik Nimbalkar
+            <h1 className="text-4xl md:text-6xl font-bold leading-tight mb-6">
+               Sai <br />Naik Nimbalkar
             </h1>
 
-            <p className="text-2xl md:text-3xl text-gray-700 mb-6 font-light">
-            Digital Marketing • Content • Digital Strategy
+            <p className="text-1xl md:text-2xl text-gray-700 mb-6 font-light">
+            Digital Marketing • SEO Content • Digital Strategy
             </p>
 
-            <p className="text-xl text-gray-600 mb-8 leading-relaxed max-w-xl">
-              I help create engaging website content, performance marketing campaigns,
-              and marketing experiences that connect with audiences and drive growth.
-            </p>
+            <p className="text-l text-gray-700 mb-8 leading-relaxed max-w-xl">
+             My default setting is clarity over fluff.<br /><br />
+             Digital marketing and content professional navigating SEO, performance marketing, and brand communications.
+             <br /><br />Germany is home at the moment, but India is an annual detour.
+             Particularly interested in sustainability and innovation, because those problems aren't going to solve themselves.
+             </p>
 
             <div className="flex flex-wrap gap-4">
-              <a
-                href="#projects"
-               className="bg-black text-white px-6 py-3 rounded-2xl hover:opacity-90 transition"
-              >
-                View Projects
-              </a>
-
+              
               <a
                 href="https://linkedin.com/in/sai-naik-nimbalkar"
                 target="_blank"
-                className="border border-gray-300 px-6 py-3 rounded-2xl hover:bg-gray-100 transition"
+                className="border border-blue-800 px-6 py-3 rounded-2xl hover:bg-blue-800 hover:text-white transition"
+
               >
                 LinkedIn
               </a>
 
               <a
-              href="/CV/Lebenslauf_DE.pdf"
+              href="/CV/Sai NN - Lebenslauf DE 2026 I.pdf"
               target="_blank"
-              className="border border-gray-300 px-6 py-3 rounded-2xl hover:bg-gray-100 transition"
+              className="border border-blue-800 px-6 py-3 rounded-2xl hover:bg-blue-800 hover:text-white transition"
               >
-                Download CV
+                CV
               </a>
             </div>
           </div>
@@ -52,68 +49,50 @@ export default function PortfolioWebsite() {
         </div>
       </section>
 
-      <section className="px-6 py-24 bg-gray-50">
-        <div className="max-w-4xl mx-auto">
-          <h2 className="text-3xl font-bold mb-6">About Me</h2>
-
-          <p className="text-gray-700 text-lg leading-relaxed">
-            I'm a marketing and content professional passionate about
-            storytelling, branding, and digital communication.
+      
+      <section className="px-6 py-12 bg-gray-50 flex items-center justify-center">
+        <div className="max-w-4xl">
+          <p className="text-blue-800 text-xl font-bold leading-relaxed text-center">
+            Do the work. The rest is noise.
           </p>
         </div>
       </section>
 
-      <section className="px-6 py-24 max-w-6xl mx-auto">
-        <h2 className="text-3xl font-bold mb-10">Skills</h2>
-
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-          {[
-            "Content Writing",
-            "Social Media",
-            "SEO",
-            "Canva",
-            "Copywriting",
-            "Marketing Strategy",
-            "Video Editing",
-            "Analytics",
-          ].map((skill) => (
-            <div
-              key={skill}
-              className="p-4 border border-gray-200 rounded-2xl text-center bg-white shadow-sm"
-            >
-              {skill}
-            </div>
-          ))}
-        </div>
-      </section>
-
-      <section id="projects" className="px-6 py-24 bg-gray-50">
+      <section id="work" className="px-6 py-18 bg-white-50">
         <div className="max-w-6xl mx-auto">
-          <h2 className="text-3xl font-bold mb-10">Projects</h2>
+          <h2 className="text-3xl font-bold mb-10">Work</h2>
 
           <div className="grid md:grid-cols-3 gap-6">
             {[
               {
-                title: "SEO Blog Strategy",
-                desc: "Created SEO-focused blog content and optimized website copy to improve visibility and engagement.",
+                title: "Website Content & Landing Pages",
+                desc: "Created and optimized website content, landing pages, and marketing copy for B2B and technology-focused companies.",
+                image: "/images/website content.svg",
+                link: "https://www.excentos.com/en/guided-selling-explained",
               },
               {
-                title: "Social Media Campaign",
-                desc: "Developed social media creatives and campaign content for audience engagement and brand awareness.",
+                title: "SEO & Blog Content",
+                desc: "Researched, wrote, and optimized long-form articles focused on customer engagement, product information, and AI-driven solutions.",
+                image: "/images/SEO content.svg",
+                link: "https://www.excentos.com/en/blog/how-do-b2bs-advise-their-online-customers",
               },
               {
-                title: "Performance Marketing",
-                desc: "Worked on digital campaigns, ad creatives, and marketing strategies focused on growth and conversions.",
+                title: "Social Media & Video Campaigns",
+                desc: "Developed social media content, campaign creatives, and short-form video content across Facebook, LinkedIn, and YouTube.",
+                image: "/images/social media.svg",
+                link: "https://www.linkedin.com/feed/update/urn:li:activity:7402634220382195712",
               },
-            ].map((project) => (
+].map((project) => (
               <div
                 key={project.title}
                 className="bg-white p-8 rounded-3xl shadow-md border border-gray-100 hover:-translate-y-2 hover:shadow-xl transition duration-300"
 
               >
-                <div className="h-40 rounded-2xl bg-gray-200 mb-5 flex items-center justify-center text-gray-500">
-                  Project Image
-                </div>
+                <img
+                  src={project.image}
+                  alt={project.title}
+                  className="h-48 w-full object-contain rounded-2xl mb-5 bg-white p-4"
+                />
 
                 <h3 className="text-2xl font-semibold mb-4">
                   {project.title}
@@ -121,35 +100,36 @@ export default function PortfolioWebsite() {
 
                 <p className="text-gray-600 mb-5">{project.desc}</p>
 
-                <button className="text-sm font-medium underline underline-offset-4">
-                  View Project
-                </button>
+                <a
+                  href={project.link}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-sm font-medium underline underline-offset-4"
+                >
+                  View →
+                </a>  
               </div>
             ))}
           </div>
         </div>
       </section>
 
-      <section className="px-6 py-20 max-w-4xl mx-auto text-center">
-        <h2 className="text-4xl font-bold mb-6">
-          Let's Work Together
+      <section className="px-6 py-20 max-w-4xl max-h-4xl mx-auto text-center">
+        <h2 className="text-4xl font-bold mb-12">
+          Open to remote work.
         </h2>
-
-        <p className="text-gray-600 text-lg mb-8">
-          Open to remote marketing, content, and creative opportunities.
-        </p>
 
         <a
           href="mailto: sainn.deu@gmail.com"
-          className="inline-block bg-black text-white px-8 py-4 rounded-2xl hover:opacity-90 transition mr-4"
+          className="border border-blue-800 px-6 py-3 rounded-2xl hover:bg-blue-800 hover:text-white transition mr-4"
         >
-          Get In Touch
+          sainn.deu@gmail.com
         </a>
 
         <a
           href="https://linkedin.com/in/sai-naik-nimbalkar"
           target="_blank"
-          className="border border-gray-300 px-6 py-3 rounded-2xl hover:bg-gray-100 transition"
+          className="border border-blue-800 px-6 py-3 rounded-2xl hover:bg-blue-800 hover:text-white transition"
         >
           LinkedIn
         </a>
