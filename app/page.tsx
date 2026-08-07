@@ -14,9 +14,9 @@ export default function PortfolioWebsite() {
 
             <p className="text-l text-gray-700 mb-8 leading-relaxed max-w-xl">
              My default setting is clarity over fluff.<br /><br />
-             Digital marketing and content professional navigating SEO, performance marketing, and brand communications.
+             Digital marketing and content professional with experience in SEO, performance marketing, website content, and brand communications. 
+             <br /><br />Passionate about sustainability, innovation, and creating content that helps people understand complex ideas.
              <br /><br />Germany is home at the moment, but India is an annual detour.
-             Particularly interested in sustainability and innovation, because those problems aren't going to solve themselves.
              </p>
 
             <div className="flex flex-wrap gap-4">
@@ -60,27 +60,79 @@ export default function PortfolioWebsite() {
 
       <section id="work" className="px-6 py-18 bg-white-50">
         <div className="max-w-6xl mx-auto">
-          <h2 className="text-3xl font-bold mb-10">Work</h2>
+          <h2 className="text-3xl font-bold mb-10">Selected Work</h2>
 
           <div className="grid md:grid-cols-3 gap-6">
             {[
               {
-                title: "Website Content & Landing Pages",
-                desc: "Created and optimized website content, landing pages, and marketing copy for B2B and technology-focused companies.",
+                title: "Website & Landing Pages",
                 image: "/images/website content.svg",
-                link: "https://www.excentos.com/en/guided-selling-explained",
+                links: [
+                  {
+                    title: "Guided Selling Explained",
+                    url: "https://www.excentos.com/en/guided-selling-explained",
+                  },
+                  {
+                    title: "Semantic Technologies",
+                    url: "https://semantictech.in/",
+                  },
+                  {
+                    title: "What is lead generation?",
+                    url: "https://www.excentos.com/en/lead-generation",
+                  },
+                  {
+                    title: "What are Product Advisors?",
+                    url: "https://www.excentos.com/en/product-advisor",
+                  },
+                  {
+                    title: "CropTech GT",
+                    url: "https://www.semantictech.in/SemanticAll/GTApp",
+                  },
+                ],
               },
               {
-                title: "SEO & Blog Content",
-                desc: "Researched, wrote, and optimized long-form articles focused on customer engagement, product information, and AI-driven solutions.",
+                title: "SEO & Blog",
                 image: "/images/SEO content.svg",
-                link: "https://www.excentos.com/en/blog/how-do-b2bs-advise-their-online-customers",
+                links: [
+                  {
+                    title: "How Do B2Bs Advise Their Online Customers?",
+                    url: "https://www.excentos.com/en/blog/how-do-b2bs-advise-their-online-customers",
+                  },
+                  {
+                    title: "Redefine Product Data Using AI",
+                    url: "https://www.excentos.com/en/blog/redefine-product-data-using-ai",
+                  },
+                  {
+                    title: "Lead Generation can save the day!",
+                    url: "https://www.excentos.com/en/blog/lead-generation-can-save-the-day",
+                  },
+                  {
+                    title: "What's the big deal about Direct to Consumer (D2C)?",
+                    url: "https://www.excentos.com/en/blog/direct-2-consumer",
+                  },
+                ],
               },
-              {
-                title: "Social Media & Video Campaigns",
-                desc: "Developed social media content, campaign creatives, and short-form video content across Facebook, LinkedIn, and YouTube.",
+             {
+                title: "Social Media",
                 image: "/images/social media.svg",
-                link: "https://www.linkedin.com/feed/update/urn:li:activity:7402634220382195712",
+                links: [
+                  {
+                    title: "FB - Semantic Tech:Farmer interview on Soyabeans",
+                    url: "https://www.facebook.com/reel/1117356660076687",
+                  },
+                  {
+                    title: "LI - Semantic Tech:Crop Cutting Experiments",
+                    url: "https://www.linkedin.com/feed/update/urn:li:activity:7415781777518002177",
+                  },
+                  {
+                    title: "IG - Semantic Tech:Buy certified Soyabean seeds",
+                    url: "https://www.instagram.com/p/DIEUSCIqG_a/?utm_source=ig_web_copy_link&igsh=NTc4MTIwNjQ2YQ==",
+                  },
+                  {
+                    title: "YT - Semantic Tech:Benefits of a Farmer Producer Company",
+                    url: "https://youtube.com/shorts/f5RDpqsViCs?si=ftPsAe1K_KofZkmd",
+                  },
+                ],
               },
 ].map((project) => (
               <div
@@ -100,14 +152,19 @@ export default function PortfolioWebsite() {
 
                 <p className="text-gray-600 mb-5">{project.desc}</p>
 
-                <a
-                  href={project.link}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-sm font-medium underline underline-offset-4"
-                >
-                  View →
-                </a>  
+                 <div className="space-y-2 text-sm">
+                    {project.links.map((item) => (
+                      <a
+                        key={item.title}
+                        href={item.url}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="block text-blue-800 hover:underline"
+                      >
+                        ⌁ {item.title}
+                      </a>
+                    ))}
+                  </div>
               </div>
             ))}
           </div>
