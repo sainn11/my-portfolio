@@ -58,7 +58,7 @@ export default function PortfolioWebsite() {
         </div>
       </section>
 
-      <section id="work" className="px-6 py-18 bg-white-50">
+      <section id="work" className="px-6 py-18 bg-white">
         <div className="max-w-6xl mx-auto">
           <h2 className="text-3xl font-bold mb-10">Selected Work</h2>
 
@@ -149,8 +149,6 @@ export default function PortfolioWebsite() {
                 <h3 className="text-2xl font-semibold mb-4">
                   {project.title}
                 </h3>
-
-                <p className="text-gray-600 mb-5">{project.desc}</p>
 
                  <div className="space-y-2 text-sm">
                     {project.links.map((item) => (
