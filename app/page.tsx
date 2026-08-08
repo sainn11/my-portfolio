@@ -43,7 +43,7 @@ export default function PortfolioWebsite() {
             <img
               src="/Photo/My Photo.jpg"
               alt="Sai Naik Nimbalkar"
-              className="w-72 h-72 rounded-3xl object-cover shadow-xl"
+              className="w-72 h-72 rounded-3xl object-cover object-[center_20%] shadow-xl"
             />
           </div>
         </div>
